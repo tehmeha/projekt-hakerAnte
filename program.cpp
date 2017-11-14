@@ -7,9 +7,9 @@
      int stupac,red;
      int polje2d[9][9]={(0,0,0),(0,0,0),(0,0,0),(0,0,0),(0,0,0),(0,0,0),(0,0,0),(0,0,0),(0,0,0)};
     do{
-        cout << "unesite stupac u koji zelite unijeti krizic/kruzic: ";
-        cin >> stupac;
         cout << "unesite red u koji zelite unijeti krizic/kruzic: ";
+        cin >> stupac;
+        cout << "unesite stupac u koji zelite unijeti krizic/kruzic: ";
         cin >> red;
         if(stupac<=8 &&stupac >0 && red <=8 && red>0 )
         {
@@ -26,6 +26,13 @@
                 }
                 cout<<endl;
             }
+             if(polje2d[0][0]==polje2d[0][1]==polje2d[0][2])
+            {
+                prvi=1;
+            }
+             if(polje2d[0][0]==polje2d[0][1]==polje2d[0][2])
+            {
+                prvi=1;
         }
         else
         {
